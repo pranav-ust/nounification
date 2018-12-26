@@ -4,8 +4,16 @@ from nltk import FreqDist
 from nltk.stem import WordNetLemmatizer
 from nltk import sent_tokenize, word_tokenize, pos_tag
 from collections import Counter
+import pickle
 
-frequency_dict = FreqDist(i.lower() for i in brown.words())
+# frequency_dict = FreqDist(i.lower() for i in brown.words())
+#
+# with open('freqdict.pkl', 'wb') as freqdict:
+#     pickle.dump(frequency_dict, freqdict)
+
+with open('freqdict.pkl', 'rb') as freqdict:
+    frequency_dict = pickle.load(freqdict)
+
 WN_NOUN = 'n'
 WN_VERB = 'v'
 WN_ADJECTIVE = 'a'
