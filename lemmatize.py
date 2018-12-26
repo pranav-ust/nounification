@@ -1,3 +1,8 @@
+##################################
+## Author: Pranav ################
+##################################
+
+
 from nltk.corpus import wordnet as wn
 from nltk.corpus import brown
 from nltk import FreqDist
@@ -6,11 +11,7 @@ from nltk import sent_tokenize, word_tokenize, pos_tag
 from collections import Counter
 import pickle
 
-# frequency_dict = FreqDist(i.lower() for i in brown.words())
-#
-# with open('freqdict.pkl', 'wb') as freqdict:
-#     pickle.dump(frequency_dict, freqdict)
-
+# load the frequency dictionary
 with open('freqdict.pkl', 'rb') as freqdict:
     frequency_dict = pickle.load(freqdict)
 
