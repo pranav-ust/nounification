@@ -47,4 +47,4 @@ def nounify_context(word, sentence):
     return(nounify(word, get_wordnet_pos(tag)))
 
 # print(nounify_tag("elect", "VV"))
-print(nounify_context("russian", "Nick is Russian"))
+# print(nounify_context("russian", "Nick is Russian"))

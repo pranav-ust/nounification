@@ -4,7 +4,6 @@
 
 
 from nltk.corpus import wordnet as wn
-from nltk.corpus import brown
 from nltk import FreqDist
 from nltk.stem import WordNetLemmatizer
 from nltk import sent_tokenize, word_tokenize, pos_tag
