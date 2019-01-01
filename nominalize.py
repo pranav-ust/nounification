@@ -1,8 +1,6 @@
 from lemmatize import *
 import re
 
-text = "Nick is Russian."
-
 def nounify_tag(word, tag):
     '''
     Input: Word you want to convert to noun, Tag in PTB format
